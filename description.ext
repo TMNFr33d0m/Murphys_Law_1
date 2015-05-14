@@ -1,0 +1,62 @@
+OnLoadMission = "Murphy's Law - Episode One - Reinforce the AAF";
+author = fr33d0m;
+onLoadName = "Murphy's Law - Episode 1";
+// this is the pic on load... change this...      loadScreen = "";
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 5;
+};
+respawn = "NONE";
+disabledAI = 0;
+aikills = 1;
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class CfgSounds {
+	sounds[] = 	{intro,Alarm1,dead,OSGOGG,briefing1,gatescne1,Recqscene1};
+
+	class OSGOGG{
+	name = "OSGOGG";
+	sound[] = {"\sounds\OSGOGG.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+
+	class Alarm1{
+	name = "Alarm1";
+	sound[] = {"\sounds\Alarm1.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+	
+	class dead{
+	name = "dead";
+	sound[] = {"\sounds\dead.ogg", 0.9, 1.0};
+	titles[] = {};
+	};
+
+	class intro{
+	name = "intro";
+	sound[] = {"\sounds\intro.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+class briefing1{
+	name = "briefing1";
+	sound[] = {"\sounds\briefing1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+class gatescne1{
+	name = "gatescne1";
+	sound[] = {"\sounds\gatescne1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+class Recqscene1{
+	name = "Recqscene1";
+	sound[] = {"\sounds\Recqscene1.ogg", 0.8, 1.0};
+	titles[] = {};
+	};
+};
